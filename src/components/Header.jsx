@@ -1,17 +1,20 @@
+import PropTypes from 'prop-types';
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { FiSun, FiMoon } from "react-icons/fi";
 
-function Header() {
-  const [isActive, setIsActive] = useState(false);
+function Header({ toggleDarkMode, isDarkMode }) {
+  const [isActive, setIsActive] = useState(false); // Mobile menu state
 
+  // Toggle the mobile menu
   const toggleActiveClass = () => {
     setIsActive(!isActive);
   };
 
   return (
-    <header className="relative flex justify-center items center top-0 z-50">
-      <div className="flex justify-center items-center p-10 text-[20px]">
+    <header className="relative flex justify-center items-center top-0 z-50">
+      <div className="flex justify-between items-center p-10 text-[20px] w-full">
         {/* Hamburger for mobile */}
         <div className="md:hidden absolute left-4 top-4 z-50">
           <button
@@ -20,16 +23,15 @@ function Header() {
             aria-expanded={isActive}
             className="flex items-center"
           >
-            <span className="">
-              {isActive ? (
-                <RxCross1 className="text-[35px] text-highlight-light dark:text-highlight-dark" />
-              ) : (
-                <RxHamburgerMenu className="text-[35px] text-highlight-light dark:text-highlight-dark" />
-              )}
-            </span>
+            {isActive ? (
+              <RxCross1 className="text-[35px] text-highlight-light dark:text-highlight-dark" />
+            ) : (
+              <RxHamburgerMenu className="text-[35px] text-highlight-light dark:text-highlight-dark" />
+            )}
           </button>
         </div>
 
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-5">
           <HashLink
             smooth
@@ -62,6 +64,16 @@ function Header() {
           </a>
         </nav>
 
+        {/* Dark Mode Toggle Button */}
+        <button
+          onClick={toggleDarkMode}
+          aria-label="Toggle Dark Mode"
+          className="absolute right-4 top-4 z-50 text-2xl p-2 bg-gray-200 dark:bg-gray-700 rounded-full"
+        >
+          {isDarkMode ? <FiSun /> : <FiMoon />}
+        </button>
+
+        {/* Mobile Navigation */}
         <nav
           className={`absolute top-0 right-0 w-screen h-screen md:hidden bg-[#F7F9F9] dark:bg-[#2C3E50] backdrop-filter p-6 shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] z-40 rounded-b-lg flex justify-center items-center ${
             isActive ? "block" : "hidden"
@@ -102,6 +114,11 @@ function Header() {
       </div>
     </header>
   );
+}
+
+Header.propTypes = {
+  toggleDarkMode: PropTypes.func.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
 }
 
 export default Header;

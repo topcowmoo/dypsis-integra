@@ -2,6 +2,7 @@
 
 // Tailwind CSS configuration object
 export default {
+  darkMode: "class", // Enable dark mode
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Specify the files where Tailwind should look for classes
   theme: {
     extend: {
