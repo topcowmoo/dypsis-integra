@@ -1,9 +1,12 @@
-
+import Projects from "../components/Projects";
 
 const Home = () => {
-  return (
-    <div></div>
-  )
-}
+
+    return (
+     
+   <Projects />
+    );
+  };
+
 
 export default Home;
