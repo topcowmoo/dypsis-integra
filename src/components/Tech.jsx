@@ -1,67 +1,60 @@
 import {
-    SiHtml5,
-    SiCss3,
-    SiJavascript,
-    SiJquery,
-    SiReact,
-    SiVite,
-    SiReactrouter,
-    SiTailwindcss,
-    SiBootstrap,
-    SiNodedotjs,
-    SiExpress,
-    SiMongodb,
-    SiMongoose,
-    SiMysql,
-    SiSequelize,
-    SiJest,
-    SiPwa,
-    SiGraphql,
-  } from 'react-icons/si';
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiJquery,
+  SiReact,
+  SiVite,
+  SiReactrouter,
+  SiTailwindcss,
+  SiBootstrap,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMongoose,
+  SiMysql,
+  SiSequelize,
+  SiJest,
+  SiPwa,
+  SiGraphql,
+} from "react-icons/si";
 
+function Tech() {
+  return (
+    <div>
+      {/* Frontend Proficiencies section */}
+      <h1 className="dark:text-title-dark text-title-light mb-3">
+        Frontend Proficiencies
+      </h1>
+      <div className="flex flex-wrap">
+        <SiHtml5 className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiCss3 className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiJavascript className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiJquery className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiReact className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiVite className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiReactrouter className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiTailwindcss className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiBootstrap className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+      </div>
 
-  function Tech() {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen mt-[-80px]">
-        <div className="align-left">
-          <div className="container bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] ">
-            {/* Frontend Proficiencies section */}
-            <h1 className="text-xl text-black font-bold mb-4">
-              Frontend Proficiencies
-            </h1>
-            <div className="flex flex-wrap mb-4">
-              {/* Render icons for frontend technologies */}
-              <SiHtml5 size={48} color="#454545" className="m-1" />
-              <SiCss3 size={48} color="#454545" className="m-1" />
-              <SiJavascript size={48} color="#454545" className="m-1" />
-              <SiJquery size={48} color="#454545" className="m-1" />
-              <SiReact size={48} color="#454545" className="m-1" />
-              <SiVite size={48} color="#454545" className="m-1" />
-              <SiReactrouter size={48} color="#454545" className="m-1" />
-              <SiTailwindcss size={48} color="#454545" className="m-1" />
-              <SiBootstrap size={48} color="#454545" className="m-1" />
-            </div>
-            {/* Backend Proficiencies section */}
-            <h1 className="text-xl text-black font-bold mb-4">
-              Backend Proficiencies
-            </h1>
-            <div className="flex flex-wrap mb-4">
-              {/* Render icons for backend technologies */}
-              <SiNodedotjs size={48} color="#454545" className="m-1" />
-              <SiExpress size={48} color="#454545" className="m-1" />
-              <SiMongodb size={48} color="#454545" className="m-1" />
-              <SiMongoose size={48} color="#454545" className="m-1" />
-              <SiMysql size={48} color="#454545" className="m-1" />
-              <SiSequelize size={48} color="#454545" className="m-1" />
-              <SiJest size={48} color="#454545" className="m-1" />
-              <SiPwa size={48} color="#454545" className="m-1" />
-              <SiGraphql size={48} color="#454545" className="m-1" />
-            </div>
-        </div>
-        </div>  
-        </div>
-    );
+      {/* Backend Proficiencies section */}
+      <h1 className="dark:text-title-dark text-title-light mb-3 mt-4">
+        Backend Proficiencies
+      </h1>
+      <div className="flex flex-wrap">
+        <SiNodedotjs className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiExpress className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiMongodb className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiMongoose className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiMysql className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiSequelize className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiJest className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiPwa className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <SiGraphql className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+      </div>
+    </div>
+  );
+}
 
-  }
-
-  export default Tech;
+export default Tech;

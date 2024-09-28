@@ -41,13 +41,13 @@ const ProjectCard = ({ project }) => {
           src={image ?? 'https://via.placeholder.com/300'}
           alt={title}
           loading="lazy"
-          className="rounded-md shadow-md w-full h-auto"
+          className="rounded-md w-full h-auto"
         />
       </div>
 
       {/* Right section with title, description, and buttons */}
       <div className="flex-1 flex flex-col justify-between lg:justify-start">
-        <div className="text-[22px] md:text-[28px] dark:text-dcbt-dark text-title-light lg:mt-0 mt-4">
+        <div className="text-[22px] md:text-[28px] dark:text--dark text-title-light  lg:mt-0 mt-4">
           {title}
         </div>
         <div className="dark:text-alltext-dark text-alltext-light mt-3 mb-5 leading-normal text-balance text-[18px] md:text-[20px] 2xl:text-[25px]">
