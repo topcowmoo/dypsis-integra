@@ -6,11 +6,27 @@ const Home = () => {
 
     return (
       <>
+      {/* Home Section */}
         <h1>Home</h1>
         <p>Welcome to the home page.</p>
         <Socials />
-        <Projects />
-        <Tech />
+
+
+
+{/* About Section */}
+<Tech />
+
+
+{/* Project Section */}
+<Projects />
+
+
+{/* Contact Section */}
+
+
+    
+
+
       </>
     );
   };
