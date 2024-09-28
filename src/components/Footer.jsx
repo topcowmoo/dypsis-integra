@@ -2,7 +2,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-auto p-3 text-[14px] w-full z-10 h-[80px]">
+    <footer className="relative bottom-0 left-0 right-0 flex justify-center items-center mx-auto p-3 text-[14px] w-full z-10 h-[80px]">
       <div className="flex items-center dark:text-alltext-dark text-alltext-light">
         <a
           href="https://github.com/topcowmoo"
