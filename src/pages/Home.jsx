@@ -1,5 +1,6 @@
 import Socials from "../components/Socials";
 import Projects from "../components/Projects";
+import Tech from "../components/Tech";
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
         <p>Welcome to the home page.</p>
         <Socials />
         <Projects />
+        <Tech />
       </>
     );
   };
