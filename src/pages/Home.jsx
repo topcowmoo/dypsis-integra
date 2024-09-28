@@ -1,10 +1,15 @@
+import Socials from "../components/Socials";
 import Projects from "../components/Projects";
 
 const Home = () => {
 
     return (
-     
-   <Projects />
+      <>
+        <h1>Home</h1>
+        <p>Welcome to the home page.</p>
+        <Socials />
+        <Projects />
+      </>
     );
   };
 
