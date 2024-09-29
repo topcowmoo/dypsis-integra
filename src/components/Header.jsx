@@ -15,7 +15,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
   };
 
   return (
-    <header className="relative flex justify-between items-center top-0 z-50 w-full p-5 bg-transparent">
+    <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md">
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
         
         {/* Logo only visible on desktop */}
