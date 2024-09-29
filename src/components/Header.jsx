@@ -13,8 +13,8 @@ function Header({ toggleDarkMode, isDarkMode }) {
   };
 
   return (
-    <header className="relative flex justify-center items-center top-0 z-50">
-      <div className="flex justify-between items-center p-10 text-[20px] w-full">
+    <header className="relative flex justify-center items-center top-0 z-50 w-full">
+      <div className="flex justify-center items-center p-10 text-[20px] w-full max-w-screen-xl mx-auto">
         {/* Hamburger for mobile */}
         <div className="md:hidden absolute left-4 top-4 z-50">
           <button
@@ -32,7 +32,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-5">
+        <nav className="hidden md:flex justify-center space-x-5">
           <HashLink
             smooth
             to="#about"
@@ -68,7 +68,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
         <button
           onClick={toggleDarkMode}
           aria-label="Toggle Dark Mode"
-          className="absolute right-4 top-4 z-50 text-2xl p-2 bg-gray-200 dark:bg-gray-700 rounded-full"
+          className="absolute right-4 top-4 z-50 text-[20px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
         >
           {isDarkMode ? <FiSun /> : <FiMoon />}
         </button>
@@ -119,6 +119,6 @@ function Header({ toggleDarkMode, isDarkMode }) {
 Header.propTypes = {
   toggleDarkMode: PropTypes.func.isRequired,
   isDarkMode: PropTypes.bool.isRequired,
-}
+};
 
 export default Header;
