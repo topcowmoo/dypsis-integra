@@ -47,19 +47,40 @@ const ProjectCard = ({ project }) => {
 
       {/* Right section with title, description, and buttons */}
       <div className="flex-1 flex flex-col justify-between lg:justify-start">
-        <div className="text-[22px] md:text-[28px] dark:text--dark text-title-light  lg:mt-0 mt-4">
+        <div className="text-[22px] md:text-[28px] dark:text-title-dark text-title-light lg:mt-0 mt-4">
           {title}
         </div>
         <div className="dark:text-alltext-dark text-alltext-light mt-3 mb-5 leading-normal text-balance text-[18px] md:text-[20px] 2xl:text-[25px]">
           {description}
         </div>
         <div className="flex space-x-4 mt-2 justify-center items-center">
-          {githubLink && renderLinkButton(githubLink, SiGithub, 'GitHub repository')}
-          {herokuLink && renderLinkButton(herokuLink, SiHeroku, 'Heroku live link')}
-          {renderLink && renderLinkButton(renderLink, SiRender, 'Render live link')}
-          {demoLink && renderLinkButton(demoLink, SiScreencastify, 'Demo link')}
-          {githubPagesLink && renderLinkButton(githubPagesLink, SiGithubpages, 'GitHub Pages live link')}
-        </div>
+  {githubLink && (
+    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+      {renderLinkButton(githubLink, SiGithub, 'GitHub repository')}
+    </div>
+  )}
+  {herokuLink && (
+    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+      {renderLinkButton(herokuLink, SiHeroku, 'Heroku live link')}
+    </div>
+  )}
+  {renderLink && (
+    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+      {renderLinkButton(renderLink, SiRender, 'Render live link')}
+    </div>
+  )}
+  {demoLink && (
+    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+      {renderLinkButton(demoLink, SiScreencastify, 'Demo link')}
+    </div>
+  )}
+  {githubPagesLink && (
+    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+      {renderLinkButton(githubPagesLink, SiGithubpages, 'GitHub Pages live link')}
+    </div>
+  )}
+</div>
+
       </div>
     </div>
   );
