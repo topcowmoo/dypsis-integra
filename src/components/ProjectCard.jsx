@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import {
   SiGithub,
   SiHeroku,
   SiRender,
   SiScreencastify,
   SiGithubpages,
-} from 'react-icons/si';
+} from "react-icons/si";
 
 const ProjectCard = ({ project }) => {
   const {
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   const openLinkInNewTab = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   const renderLinkButton = (url, IconComponent, label) => (
@@ -34,11 +34,14 @@ const ProjectCard = ({ project }) => {
   );
 
   return (
-    <div className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-lg p-7">
+    <div
+      className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-lg p-7 
+  border-2 border-transparent transition-all duration-300 hover:border-2 hover:border-highlight-light dark:hover:border-highlight-dark"
+    >
       {/* Left section with image */}
       <div className="project-card">
         <img
-          src={image ?? 'https://via.placeholder.com/300'}
+          src={image ?? "https://via.placeholder.com/300"}
           alt={title}
           loading="lazy"
           className="rounded-md w-full h-auto"
@@ -54,33 +57,36 @@ const ProjectCard = ({ project }) => {
           {description}
         </div>
         <div className="flex space-x-4 mt-2 justify-center items-center">
-  {githubLink && (
-    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
-      {renderLinkButton(githubLink, SiGithub, 'GitHub repository')}
-    </div>
-  )}
-  {herokuLink && (
-    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
-      {renderLinkButton(herokuLink, SiHeroku, 'Heroku live link')}
-    </div>
-  )}
-  {renderLink && (
-    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
-      {renderLinkButton(renderLink, SiRender, 'Render live link')}
-    </div>
-  )}
-  {demoLink && (
-    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
-      {renderLinkButton(demoLink, SiScreencastify, 'Demo link')}
-    </div>
-  )}
-  {githubPagesLink && (
-    <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
-      {renderLinkButton(githubPagesLink, SiGithubpages, 'GitHub Pages live link')}
-    </div>
-  )}
-</div>
-
+          {githubLink && (
+            <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+              {renderLinkButton(githubLink, SiGithub, "GitHub repository")}
+            </div>
+          )}
+          {herokuLink && (
+            <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+              {renderLinkButton(herokuLink, SiHeroku, "Heroku live link")}
+            </div>
+          )}
+          {renderLink && (
+            <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+              {renderLinkButton(renderLink, SiRender, "Render live link")}
+            </div>
+          )}
+          {demoLink && (
+            <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+              {renderLinkButton(demoLink, SiScreencastify, "Demo link")}
+            </div>
+          )}
+          {githubPagesLink && (
+            <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+              {renderLinkButton(
+                githubPagesLink,
+                SiGithubpages,
+                "GitHub Pages live link"
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
