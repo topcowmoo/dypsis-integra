@@ -17,8 +17,9 @@ function Header({ toggleDarkMode, isDarkMode }) {
   return (
     <header className="relative flex justify-between items-center top-0 z-50 w-full p-5 bg-transparent">
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
-        {/* Logo on the Left */}
-        <div className="flex-shrink-0">
+        
+        {/* Logo only visible on desktop */}
+        <div className="hidden md:block flex-shrink-0">
           <img
             src={isDarkMode ? logoLight : logoDark}
             alt="Logo"
@@ -26,7 +27,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           />
         </div>
 
-        {/* Desktop Navigation and Dark Mode Toggle to the Right */}
+        {/* Desktop Navigation and Dark Mode Toggle */}
         <div className="hidden md:flex items-center space-x-5">
           <nav className="flex space-x-5">
             <HashLink
@@ -71,18 +72,28 @@ function Header({ toggleDarkMode, isDarkMode }) {
         </div>
 
         {/* Hamburger for mobile */}
-        <div className="md:hidden absolute right-4 top-4 z-50">
+        <div className="md:hidden flex items-center justify-between w-full">
+          {/* Hamburger Icon on the left */}
           <button
             onClick={toggleActiveClass}
             aria-label="Toggle navigation menu"
             aria-expanded={isActive}
-            className="flex items-center"
+            className="z-50 relative"
           >
             {isActive ? (
               <RxCross1 className="text-[35px] text-highlight-light dark:text-highlight-dark" />
             ) : (
               <RxHamburgerMenu className="text-[35px] text-highlight-light dark:text-highlight-dark" />
             )}
+          </button>
+
+          {/* Dark Mode Toggle on the right */}
+          <button
+            onClick={toggleDarkMode}
+            aria-label="Toggle Dark Mode"
+            className="text-[35px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light absolute right-4"
+          >
+            {isDarkMode ? <FiSun /> : <FiMoon />}
           </button>
         </div>
       </div>
