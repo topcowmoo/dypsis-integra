@@ -34,7 +34,12 @@ const ProjectCard = ({ project }) => {
   );
 
   return (
-    <div className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-lg p-7 brightness-75 hover:brightness-100 transition-all duration-300 hover:shadow-lg hover:shadow-title-light dark:hover:shadow-alltext-dark">
+    <div className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-lg p-7 brightness-75 transition-all duration-300 hover:brightness-100 hover:shadow-lg hover:shadow-title-light dark:hover:shadow-alltext-dark 
+      md:hover:brightness-100"
+      // For mobile devices, add 'touch' interaction
+      onTouchStart={(e) => e.currentTarget.classList.add('brightness-100')}
+      onTouchEnd={(e) => e.currentTarget.classList.remove('brightness-100')}
+    >
 
       {/* Left section with image */}
       <div className="project-card">
@@ -77,11 +82,7 @@ const ProjectCard = ({ project }) => {
           )}
           {netlifyLink && (
             <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
-              {renderLinkButton(
-                netlifyLink,
-                SiNetlify,
-                "Netlify live link"
-              )}
+              {renderLinkButton(netlifyLink, SiNetlify, "Netlify live link")}
             </div>
           )}
         </div>
