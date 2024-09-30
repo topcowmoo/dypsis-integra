@@ -13,7 +13,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md md:text-[25px]">
       <div className="flex justify-around w-full max-w-screen-xl mx-auto">
         {/* Desktop Navigation and Dark Mode Toggle */}
         <div className="hidden md:flex items-center space-x-5">
@@ -54,7 +54,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="ml-6 text-[27px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
+            className="ml-6 text-[30px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
           >
             {isDarkMode ? <PiSunDuotone /> : <PiMoonDuotone />}
           </button>

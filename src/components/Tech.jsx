@@ -23,7 +23,7 @@ function Tech() {
   return (
     <div>
       {/* Frontend Proficiencies section */}
-      <h1 className="dark:text-title-dark text-title-light mb-3">
+      <h1 className="dark:text-title-dark text-title-light mb-3 text-[30px]">
         Frontend Proficiencies
       </h1>
       <div className="flex flex-wrap">
@@ -39,7 +39,7 @@ function Tech() {
       </div>
 
       {/* Backend Proficiencies section */}
-      <h1 className="dark:text-title-dark text-title-light mb-3 mt-4">
+      <h1 className="dark:text-title-dark text-title-light mb-3 mt-4 text-[30px]">
         Backend Proficiencies
       </h1>
       <div className="flex flex-wrap">

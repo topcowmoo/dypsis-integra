@@ -166,3 +166,5 @@ Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffe
 ![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/verschaffeltia-splendida)
 
 ![Languages](https://img.shields.io/github/languages/count/topcowmoo/verschaffeltia-splendida)
+
+[![wakatime](https://wakatime.com/badge/user/018eee6c-d24d-478e-b142-37a7c9e0fdac/project/a7cd91ab-b4c5-4281-8c4c-4600ba85cf07.svg)](https://wakatime.com/badge/user/018eee6c-d24d-478e-b142-37a7c9e0fdac/project/a7cd91ab-b4c5-4281-8c4c-4600ba85cf07)

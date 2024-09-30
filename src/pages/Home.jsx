@@ -41,7 +41,7 @@ const Home = () => {
             — feel free to connect!
           </p>
           {/* Tech section centered */}
-          <div className="relative mt-6 w-full flex justify-center">
+          <div className="relative mt-6 w-full flex justify-center lg:justify-start">
             <Tech />
           </div>
         </article>
@@ -58,7 +58,7 @@ const Home = () => {
             <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
               <article className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
                 <h2 className="w-full text-[26px] md:text-[40px]">Projects</h2>
-                <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[20px] leading-normal px-1 mt-4">
+                <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[25px] leading-normal px-1 mt-4">
                   Explore my recent projects to see how I bring ideas to life
                   through efficient,{" "}
                   <span className="dark:text-highlight-dark text-highlight-light">
@@ -89,7 +89,7 @@ const Home = () => {
                 </h2>
 
                 {/* Contact description */}
-                <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[20px] leading-normal">
+                <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[25px] leading-normal">
                   I&apos;m always open to discussing new opportunities and
                   potential collaborations. Feel free to reach out to me
                   directly at{" "}

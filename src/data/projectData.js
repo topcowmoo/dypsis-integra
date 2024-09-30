@@ -21,7 +21,7 @@ const projectData = [
       id: 3,
       title: "Just Another Text Editor",
       description:
-        "A Progressive Web Application (PWA) for rich text editing with offline support.",
+        "Offline-supported rich text editing within a Progressive Web Application (PWA).",
       image: "https://portfoliobucket2024.s3.amazonaws.com/jate.webp",
       githubLink: "https://github.com/topcowmoo/general-toothpaste",
       renderLink: "https://general-toothpaste.onrender.com",
