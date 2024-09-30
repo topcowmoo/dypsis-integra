@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { PiSunDuotone, PiMoonDuotone } from "react-icons/pi";
 
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isActive, setIsActive] = useState(false); // Mobile menu state
@@ -54,9 +54,9 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="ml-6 text-[18px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
+            className="ml-6 text-[27px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
           >
-            {isDarkMode ? <FiSun /> : <FiMoon />}
+            {isDarkMode ? <PiSunDuotone /> : <PiMoonDuotone />}
           </button>
         </div>
 
@@ -82,7 +82,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
             aria-label="Toggle Dark Mode"
             className="text-[26px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light absolute right-4"
           >
-            {isDarkMode ? <FiSun /> : <FiMoon />}
+            {isDarkMode ? <PiSunDuotone /> : <PiMoonDuotone />}
           </button>
         </div>
       </div>

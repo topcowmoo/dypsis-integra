@@ -4,7 +4,7 @@ import {
   SiHeroku,
   SiRender,
   SiScreencastify,
-  SiGithubpages,
+  SiNetlify,
 } from "react-icons/si";
 
 const ProjectCard = ({ project }) => {
@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
     demoLink,
     herokuLink,
     renderLink,
-    githubPagesLink,
+    netlifyLink,
   } = project;
 
   const openLinkInNewTab = (url) => {
@@ -77,12 +77,12 @@ const ProjectCard = ({ project }) => {
               {renderLinkButton(demoLink, SiScreencastify, "Demo link")}
             </div>
           )}
-          {githubPagesLink && (
+          {netlifyLink && (
             <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
               {renderLinkButton(
-                githubPagesLink,
-                SiGithubpages,
-                "GitHub Pages live link"
+                netlifyLink,
+                SiNetlify,
+                "Netlify live link"
               )}
             </div>
           )}
@@ -102,7 +102,7 @@ ProjectCard.propTypes = {
     demoLink: PropTypes.string,
     herokuLink: PropTypes.string,
     renderLink: PropTypes.string,
-    githubPagesLink: PropTypes.string,
+    netlifyLink: PropTypes.string,
   }).isRequired,
 };
 

@@ -47,12 +47,12 @@ const projectData = [
     },
     {
       id: 6,
-      title: "Weather Interface",
+      title: "Effective Weather Interface",
       description:
         "A responsive weather dashboard delivering real-time updates and forecasts.",
       image: "https://portfoliobucket2024.s3.amazonaws.com/weather.webp",
       githubLink: "https://github.com/topcowmoo/effective-weather-interface",
-      githubPagesLink: "https://topcowmoo.github.io/effective-weather-interface/",
+      netlifyLink: "https://effective-weather-interface.netlify.app",
     },
   ];
   
