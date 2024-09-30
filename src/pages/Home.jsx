@@ -78,7 +78,7 @@ const Home = () => {
 
       {/* Contact Section */}
       <div className="container-contact" id="contact">
-        <section className="relative flex flex-col items-center text-center mb-16">
+        <section className="relative flex flex-col items-center text-center mb-2">
           {/* Ensure the height is reserved for the whole container */}
           <div className="relative w-full h-auto min-h-[300px] min-w-[390px]">
             {/* Set max-width to prevent content jumping on larger screens */}
@@ -106,7 +106,7 @@ const Home = () => {
                     onClick={() =>
                       (window.location.href = "mailto:mammoliti.sam@gmail.com")
                     }
-                    className="rounded-lg dark:bg-white/10 bg-black bg-opacity-10 px-6 py-3 text-[13px] md:text-[17px] lg:text-[21px] dark:text-alltext-dark text-alltext-light border-transparent border-2 dark:hover:border-highlight-dark hover:border-highlight-light transition-colors duration-200 ease-in-out"
+                    className="rounded-lg dark:bg-white/10 bg-black bg-opacity-10 px-3 py-2 text-[13px] md:text-[17px] lg:text-[21px] dark:text-alltext-dark text-alltext-light border-transparent border-2 dark:hover:border-highlight-dark hover:border-highlight-light transition-colors duration-200 ease-in-out"
                     aria-label="Email me"
                   >
                     Let&apos;s Chat

@@ -3,8 +3,6 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { FiSun, FiMoon } from "react-icons/fi";
-import logoDark from '../assets/logodark.png';
-import logoLight from '../assets/logolight.png';
 
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isActive, setIsActive] = useState(false); // Mobile menu state
@@ -16,16 +14,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
 
   return (
     <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md">
-      <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
-        
-        {/* Logo only visible on desktop */}
-        <div className="hidden md:block flex-shrink-0">
-          <img
-            src={isDarkMode ? logoLight : logoDark}
-            alt="Logo"
-            className="h-10 w-auto"
-          />
-        </div>
+      <div className="flex justify-around w-full max-w-screen-xl mx-auto">
 
         {/* Desktop Navigation and Dark Mode Toggle */}
         <div className="hidden md:flex items-center space-x-5">
@@ -65,7 +54,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="ml-6 text-[20px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
+            className="ml-6 text-[18px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
           </button>
@@ -81,9 +70,9 @@ function Header({ toggleDarkMode, isDarkMode }) {
             className="z-50 relative"
           >
             {isActive ? (
-              <RxCross1 className="text-[35px] text-highlight-light dark:text-highlight-dark" />
+              <RxCross1 className="text-[26px] text-title-light dark:text-alltext-dark" />
             ) : (
-              <RxHamburgerMenu className="text-[35px] text-highlight-light dark:text-highlight-dark" />
+              <RxHamburgerMenu className="text-[26px] text-title-light dark:text-alltext-dark" />
             )}
           </button>
 
@@ -91,7 +80,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="text-[35px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light absolute right-4"
+            className="text-[26px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light absolute right-4"
           >
             {isDarkMode ? <FiSun /> : <FiMoon />}
           </button>
