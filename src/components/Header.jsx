@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
@@ -15,7 +15,6 @@ function Header({ toggleDarkMode, isDarkMode }) {
   return (
     <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md">
       <div className="flex justify-around w-full max-w-screen-xl mx-auto">
-
         {/* Desktop Navigation and Dark Mode Toggle */}
         <div className="hidden md:flex items-center space-x-5">
           <nav className="flex space-x-5">
@@ -45,6 +44,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
+              aria-label="Resume (PDF Document)"
             >
               Resume
             </a>
@@ -114,6 +114,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
               href="/mammolitiResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Resume (PDF Document)"
               onClick={() => setIsActive(false)}
             >
               Resume

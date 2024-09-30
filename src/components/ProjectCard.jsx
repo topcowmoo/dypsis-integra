@@ -34,15 +34,13 @@ const ProjectCard = ({ project }) => {
   );
 
   return (
-    <div
-      className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-lg p-7 
-  border-2 border-transparent transition-all duration-300 hover:border-2 hover:border-highlight-light dark:hover:border-highlight-dark"
-    >
+    <div className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-lg p-7 brightness-75 hover:brightness-100 transition-all duration-300 hover:shadow-lg hover:shadow-title-light dark:hover:shadow-alltext-dark">
+
       {/* Left section with image */}
       <div className="project-card">
         <img
           src={image ?? "https://via.placeholder.com/300"}
-          alt={title}
+          alt=""
           loading="lazy"
           className="rounded-md w-full h-auto"
         />

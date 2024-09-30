@@ -47,7 +47,7 @@ const projectData = [
     },
     {
       id: 6,
-      title: "Effective Weather Interface",
+      title: "Weather Dashboard",
       description:
         "A responsive weather dashboard delivering real-time updates and forecasts.",
       image: "https://portfoliobucket2024.s3.amazonaws.com/weather.webp",

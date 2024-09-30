@@ -23,13 +23,12 @@ const Home = () => {
         </header>
       </div>
 
-      {/* About Section */}
       <div className="container-about" id="about">
   <section className="relative flex flex-col items-center text-center">
     <div className="relative w-full h-full min-w-[390px]">
       <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
         <article className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
-          <h1 className="w-full text-[26px] md:text-[40px]">About Me</h1>
+          <h2 className="w-full text-[26px] md:text-[40px]">About Me</h2>
           <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[20px] 2xl:text-[25px] leading-normal mt-4">
             Hey! I’m a full-stack web developer passionate about creating
             high-quality web applications and platforms. I love bringing a
@@ -58,7 +57,7 @@ const Home = () => {
           <div className="relative w-full h-full min-w-[390px]">
             <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
               <article className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
-                <h1 className="w-full text-[26px] md:text-[40px]">Projects</h1>
+                <h2 className="w-full text-[26px] md:text-[40px]">Projects</h2>
                 <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[20px] leading-normal px-1 mt-4">
                   Explore my recent projects to see how I bring ideas to life
                   through efficient,{" "}
@@ -85,9 +84,9 @@ const Home = () => {
             <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
               <div className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
                 {/* Contact heading */}
-                <h3 className="w-full text-[26px] md:text-[40px] mb-4">
+                <h2 className="w-full text-[26px] md:text-[40px] mb-4">
                   Contact
-                </h3>
+                </h2>
 
                 {/* Contact description */}
                 <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[20px] leading-normal">
