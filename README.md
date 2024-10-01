@@ -1,42 +1,26 @@
 <a name="readme-top"></a>
 
-
-# Your Project Title
-
-<!-- Badge Section -->
-[![Analytics](https://simpleanalyticsbadges.com/verschaffeltia-splendida.netlify.app?mode=auto)](https://dashboard.simpleanalytics.com/verschaffeltia-splendida.netlify.app?utm_source=verschaffeltia-splendida.netlify.app&utm_content=badge)
-
-## Project Description
-
-Your project description goes here.
-
-
-amazon s3 used
-
-
- [![Netlify Status](https://api.netlify.com/api/v1/badges/9780abc1-5367-4808-a38b-5a5d8a783e8d/deploy-status)](https://app.netlify.com/sites/salvatoremammoliti/deploys)
-
 <br />
 <div align="center">
-  <a href="https://github.com/topcowmoo/verschaffeltia-splendida">
-    <img src="./src/assets/images/logo.png" alt="Logo">
+  <a href="https://github.com/topcowmoo/dypsis-integra">
+    <img src="public/images/logo.svg" alt="Logo">
   </a>
 
-<h3 align="center">React Portfolio</h3>
+<h3 align="center">Salvatore Mammoliti</h3>
 
   <p align="center">
 This project is a single page app React Portfolio, designed to showcase my work and skills. Built using Vite for fast development, Tailwind CSS for styling, and Formik for form management, the portfolio includes sections for displaying my projects, contacting me among others. It provides a clean and modern interface for potential employers or clients to explore my portfolio. Please check out the deployed version, which is hosted on Netlify (link below). Thank you.
 
 <br />
 <br />
-<a href="https://github.com/topcowmoo/verschaffeltia-splendida"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/topcowmoo/dypsis-integra"><strong>Explore the docs »</strong></a>
 <br />
 <br />
-<a href="https://verschaffeltia-splendida.netlify.app/">Deployed App on Netlify</a>
+<a href="https://salvatoremammoliti.netlify.app/">Deployed App on Netlify</a>
 ·
-<a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Report Bug</a>
+<a href="https://github.com/topcowmoo/dypsis-integra/issues">Report Bug</a>
 ·
-<a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Request Feature</a>
+<a href="https://github.com/topcowmoo/dypsis-integra/issues">Request Feature</a>
 </p>
 </div>
 
@@ -72,29 +56,29 @@ A single-page React portfolio deployed on Netlify showcasing projects, skills, a
 
 Landing Page:
 
-![image](https://github.com/topcowmoo/verschaffeltia-splendida/assets/149528212/f7dbbc13-5691-47ce-a653-23e0e5d98d54)
+![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/f7dbbc13-5691-47ce-a653-23e0e5d98d54)
 
 About Me Page:
 
-![image](https://github.com/topcowmoo/verschaffeltia-splendida/assets/149528212/fd01db57-91dd-49f1-a610-0f7dbb522282)
+![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/fd01db57-91dd-49f1-a610-0f7dbb522282)
 
 Projects Page:
 
-![image](https://github.com/topcowmoo/verschaffeltia-splendida/assets/149528212/729e93e9-c487-41e6-8acd-ff69c41d4335)
+![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/729e93e9-c487-41e6-8acd-ff69c41d4335)
 
 Contact Page:
 
-![image](https://github.com/topcowmoo/verschaffeltia-splendida/assets/149528212/e84abbc9-7e07-4280-ad36-0807d1cc8db5)
+![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/e84abbc9-7e07-4280-ad36-0807d1cc8db5)
 
 Resume Page:
 
-![image](https://github.com/topcowmoo/verschaffeltia-splendida/assets/149528212/1497ebde-6637-484d-a3c3-902492879118)
+![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/1497ebde-6637-484d-a3c3-902492879118)
 
 <!-- BUILT WITH -->
 
 ## Built With
 
-[![My Skills](https://simpleskill.icons.workers.dev/svg?i=nodedotjs,javascript,react,vite,reactrouter,tailwindcss,netlify,HTML5,googlefonts,=50)](#)
+[![My Skills](https://simpleskill.icons.workers.dev/svg?i=nodedotjs,react,vite,reactrouter,tailwindcss,HTML5,javascript,googlefonts,amazons3,netlify,=50)](#)
 
 <!-- INSTALLATION -->
 
@@ -102,7 +86,7 @@ Resume Page:
 
 1. Clone the repo to your local machince.
    ```sh
-   git clone https://github.com/topcowmoo/verschaffeltia-splendida
+   git clone https://github.com/topcowmoo/dypsis-integra
    ```
 2. Install NPM packages
    ```sh
@@ -138,9 +122,9 @@ Don't forget to give the project a star! Thanks again!
 
 Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
-Project Link: [https://github.com/topcowmoo/verschaffeltia-splendida](https://github.com/topcowmoo/verschaffeltia-splendida)
+Project Link: [https://github.com/topcowmoo/dypsis-integra](https://github.com/topcowmoo/dypsis-integra)
 
-Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffeltia-splendida.netlify.app/)
+Netlify Link: [https://salvatoremammoliti.netlify.app/](https://salvatoremammoliti.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,10 +132,8 @@ Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffe
 
 ## Acknowledgments
 
-- [Pair Programing with Sahil Banati](https://github.com/sbanati)
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
-- [Formik](https://formik.org/docs/tutorial)
 - [Netlify](https://www.netlify.com/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Adobe Express](https://new.express.adobe.com/)
@@ -163,8 +145,12 @@ Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffe
 
 ---
 
-![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/verschaffeltia-splendida)
+![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/dypsis-integra)
 
-![Languages](https://img.shields.io/github/languages/count/topcowmoo/verschaffeltia-splendida)
+![Languages](https://img.shields.io/github/languages/count/topcowmoo/dypsis-integra)
 
 [![wakatime](https://wakatime.com/badge/user/018eee6c-d24d-478e-b142-37a7c9e0fdac/project/a7cd91ab-b4c5-4281-8c4c-4600ba85cf07.svg)](https://wakatime.com/badge/user/018eee6c-d24d-478e-b142-37a7c9e0fdac/project/a7cd91ab-b4c5-4281-8c4c-4600ba85cf07)
+
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/9780abc1-5367-4808-a38b-5a5d8a783e8d/deploy-status)](https://app.netlify.com/sites/salvatoremammoliti/deploys)
+
+[![Analytics](https://simpleanalyticsbadges.com/dypsis-integra.netlify.app?mode=auto)](https://dashboard.simpleanalytics.com/verschaffeltia-splendida.netlify.app?utm_source=verschaffeltia-splendida.netlify.app&utm_content=badge)
