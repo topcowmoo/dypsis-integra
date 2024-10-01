@@ -18,6 +18,9 @@ import {
   SiPwa,
   SiGraphql,
 } from "react-icons/si";
+import { FaGit } from "react-icons/fa6";
+import { TbApi } from "react-icons/tb";
+
 
 function Tech() {
   return (
@@ -52,6 +55,8 @@ function Tech() {
         <SiJest className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
         <SiPwa className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
         <SiGraphql className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <FaGit className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
+        <TbApi className="m-1 w-[30px] h-[30px] dark:text-alltext-dark text-alltext-light" />
       </div>
     </div>
   );

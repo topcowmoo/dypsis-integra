@@ -3,6 +3,7 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { PiSunDuotone, PiMoonDuotone } from "react-icons/pi";
+import logo from "../assets/logo.svg";
 
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isActive, setIsActive] = useState(false); // Mobile menu state
@@ -14,9 +15,14 @@ function Header({ toggleDarkMode, isDarkMode }) {
 
   return (
     <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md md:text-[25px]">
-      <div className="flex justify-around w-full max-w-screen-xl mx-auto">
-        {/* Desktop Navigation and Dark Mode Toggle */}
-        <div className="hidden md:flex items-center space-x-5">
+      <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
+        {/* Logo on the left */}
+        <div className="flex-shrink-0 hidden sm:block ">
+          <img src={logo} alt="Logo" className="w-[50px] h-[50px]" />
+        </div>
+
+        {/* Centered navigation for md and above */}
+        <div className="hidden md:flex flex-grow justify-center space-x-5">
           <nav className="flex space-x-5">
             <HashLink
               smooth
@@ -49,12 +55,14 @@ function Header({ toggleDarkMode, isDarkMode }) {
               Resume
             </a>
           </nav>
+        </div>
 
-          {/* Dark Mode Toggle Button */}
+        {/* Dark Mode Toggle Button on the right */}
+        <div className="hidden md:flex items-center justify-end flex-shrink-0">
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="ml-6 text-[30px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
+            className="text-[30px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
           >
             {isDarkMode ? <PiSunDuotone /> : <PiMoonDuotone />}
           </button>
@@ -62,7 +70,6 @@ function Header({ toggleDarkMode, isDarkMode }) {
 
         {/* Hamburger for mobile */}
         <div className="md:hidden flex items-center justify-between w-full">
-          {/* Hamburger Icon on the left */}
           <button
             onClick={toggleActiveClass}
             aria-label="Toggle navigation menu"
@@ -76,7 +83,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
             )}
           </button>
 
-          {/* Dark Mode Toggle on the right */}
+          {/* Dark Mode Toggle on the right for mobile */}
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
