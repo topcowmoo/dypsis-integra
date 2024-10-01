@@ -3,7 +3,7 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { PiSunDuotone, PiMoonDuotone } from "react-icons/pi";
-import logo from "../assets/logo.svg";
+import logo from "/images/logo.svg";
 
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isActive, setIsActive] = useState(false); // Mobile menu state
