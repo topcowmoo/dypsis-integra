@@ -14,11 +14,11 @@ function Header({ toggleDarkMode, isDarkMode }) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full p-5 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md md:text-[25px]">
+    <header className="sticky top-0 z-50 w-full p-3 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md md:text-[18px] xl:text-[20px] 2xl:text-[25px]">
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
         {/* Logo on the left */}
-        <div className="flex-shrink-0 hidden sm:block ">
-          <img src={logo} alt="Logo" className="w-[50px] h-[50px]" />
+        <div className="flex-shrink-0 hidden md:block ">
+          <img src={logo} alt="Logo" className="w-[46px] h-[46px]" />
         </div>
 
         {/* Centered navigation for md and above */}
@@ -62,7 +62,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="text-[30px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
+            className="text-[32px] p-1 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light"
           >
             {isDarkMode ? <PiSunDuotone /> : <PiMoonDuotone />}
           </button>
@@ -77,7 +77,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
             className="z-50 relative"
           >
             {isActive ? (
-              <RxCross1 className="text-[26px] text-title-light dark:text-alltext-dark" />
+              <RxCross1 className="text-[28px] text-title-light dark:text-alltext-dark" />
             ) : (
               <RxHamburgerMenu className="text-[26px] text-title-light dark:text-alltext-dark" />
             )}
@@ -87,7 +87,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle Dark Mode"
-            className="text-[26px] p-2 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light absolute right-4"
+            className="text-[30px] p-1 focus:outline-none bg-transparent dark:text-alltext-dark text-alltext-light absolute right-4"
           >
             {isDarkMode ? <PiSunDuotone /> : <PiMoonDuotone />}
           </button>

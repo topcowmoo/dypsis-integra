@@ -12,7 +12,7 @@ export default {
       colors: {
         title: {
           light: "#004262", // Light mode title
-          dark: "#87C9D8", // Dark mode title
+          dark: "#DCF0F4", // Dark mode title
         },
         bgc: {
           light: "#F7F9F9", // Light background
