@@ -1,8 +1,11 @@
 import Socials from "../components/Socials";
 import Projects from "../components/Projects";
 import Tech from "../components/Tech";
+import Button from "../components/Button";
+
 
 const Home = () => {
+
   return (
     <>
       {/* Home Section */}
@@ -104,18 +107,14 @@ const Home = () => {
 
                 {/* Button with reserved space */}
                 <div className="w-full mt-10 flex justify-center items-center">
-                <button
-  onClick={() =>
-    (window.location.href = "mailto:mammoliti.sam@gmail.com")
-  }
-  className="relative overflow-hidden rounded-lg dark:bg-white/10 bg-black bg-opacity-10 px-3 py-2 text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px] dark:text-alltext-dark text-alltext-light transition-colors duration-200 ease-in-out 
-    before:absolute before:bottom-0 before:left-0 before:w-0 before:h-full before:bg-title-light dark:before:bg-alltext-dark before:z-0 before:transition-all before:duration-500 hover:before:w-full hover:bg-title-light hover:text-[#d4d4d4] dark:hover:bg-alltext-dark dark:hover:text-bgc-dark"
-  aria-label="Email me"
->
-  <span className="relative z-10">Let&apos;s Chat</span>
-</button>
-
-
+                  <Button
+                    text="Let's Connect"
+                    className="text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] px-3 py-2" // Apply responsive text size directly here
+                    onClick={() =>
+                      (window.location.href = "mailto:mammoliti.sam@gmail.com")
+                    }
+                    ariaLabel="Email me"
+                  />
                 </div>
               </div>
             </div>
