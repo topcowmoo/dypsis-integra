@@ -3,7 +3,6 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { PiSunDuotone, PiMoonDuotone } from "react-icons/pi";
-import logo from "/images/logo.svg";
 
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isActive, setIsActive] = useState(false); // Mobile menu state
@@ -18,7 +17,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
         {/* Logo on the left */}
         <div className="flex-shrink-0 hidden md:block ">
-          <img src={logo} alt="Logo" className="w-[46px] h-[46px]" />
+          <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.svg" alt="Personal logo" className="w-[46px] h-[46px]" />
         </div>
 
         {/* Centered navigation for md and above */}
