@@ -1,0 +1,19 @@
+# Cache images, fonts, CSS, and JS for 1 year
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Shorter cache for HTML files (5 minutes)
+/
+  Cache-Control: public, max-age=300
+
+/* 
+  Cache-Control: public, max-age=300
