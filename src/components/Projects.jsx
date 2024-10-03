@@ -4,14 +4,19 @@ import projectData from "../data/projectData";
 // Define Projects functional component
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-8">
-      {/* Map over the projects array and render project cards */}
-      {projectData.map((project) => (
-        <div key={project.id} className="w-full">
-          <ProjectCard project={project} />
-        </div>
-      ))}
-    </div>
+    <section aria-labelledby="projects-section">
+      {/* Provide a heading for accessibility */}
+      <h2 id="projects-section" className="sr-only">Projects</h2> 
+      
+      <div className="flex flex-col gap-8">
+        {/* Map over the projects array and render project cards */}
+        {projectData.map((project) => (
+          <div key={project.id} className="w-full">
+            <ProjectCard project={project} />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

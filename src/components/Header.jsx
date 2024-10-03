@@ -17,7 +17,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
         {/* Logo on the left */}
         <div className="flex-shrink-0 hidden md:block ">
-          <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.svg" alt="Personal logo" className="w-[46px] h-[46px]" />
+          <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp" alt="Personal logo" className="w-[40px] h-[42px]" />
         </div>
 
         {/* Centered navigation for md and above */}

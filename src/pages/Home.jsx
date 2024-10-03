@@ -3,7 +3,6 @@ import Projects from "../components/Projects";
 import Tech from "../components/Tech";
 import Button from "../components/Button";
 
-
 const Home = () => {
 
   return (
@@ -14,7 +13,7 @@ const Home = () => {
         id="home"
       >
         <header className="w-full flex flex-col items-center dark:text-title-dark text-title-light text-center">
-          <h1 className="text-[34px] sm:text-[65px] lg:text-[72px] xl:text-[80px]">
+          <h1 className="text-[34px] sm:text-[65px] lg:text-[72px] xl:text-[80px]" id="home-heading">
             Salvatore Mammoliti
           </h1>
           <h2 className="text-[23px] md:text-[45px] lg:text-[50px] xl:text-[60px] dark:text-alltext-dark text-alltext-light">
@@ -26,12 +25,13 @@ const Home = () => {
         </header>
       </div>
 
-      <div className="container-about" id="about">
+      {/* About Section */}
+      <div className="container-about" id="about" aria-labelledby="about-heading">
         <section className="relative flex flex-col items-center text-center">
           <div className="relative w-full h-full min-w-[390px]">
             <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
               <article className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
-                <h2 className="w-full text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="w-full text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px]" id="about-heading">
                   About Me
                 </h2>
                 <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px] leading-normal mt-4">
@@ -56,12 +56,12 @@ const Home = () => {
       </div>
 
       {/* Project Section */}
-      <div className="container-projects" id="projects">
+      <div className="container-projects" id="projects" aria-labelledby="projects-heading">
         <section className="relative flex flex-col items-center text-center">
           <div className="relative w-full h-full min-w-[390px]">
             <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
               <article className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
-                <h2 className="w-full text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="w-full text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px]" id="projects-heading">
                   Projects
                 </h2>
                 <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px] leading-normal px-1 mt-4">
@@ -82,7 +82,7 @@ const Home = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="container-contact" id="contact">
+      <div className="container-contact" id="contact" aria-labelledby="contact-heading">
         <section className="relative flex flex-col items-center text-center mb-2">
           {/* Ensure the height is reserved for the whole container */}
           <div className="relative w-full h-auto min-h-[300px] min-w-[390px]">
@@ -90,18 +90,19 @@ const Home = () => {
             <div className="relative flex flex-grow flex-col items-center justify-center mx-4 sm:mx-8 md:mx-12 my-4 sm:my-12">
               <div className="w-full md:w-[80%] lg:w-[70%] flex flex-grow flex-col items-center sm:items-start dark:text-title-dark text-title-light text-center sm:text-left">
                 {/* Contact heading */}
-                <h2 className="w-full text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px] mb-4">
+                <h2 className="w-full text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px] mb-4" id="contact-heading">
                   Contact
                 </h2>
 
                 {/* Contact description */}
                 <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px] leading-normal">
-                  I&apos;m always open to discussing new opportunities and
-                  potential collaborations. Feel free to reach out to me
-                  directly at{" "}
-                  <span className="hover:underline cursor-pointer dark:text-highlight-dark text-highlight-light">
+                  I&apos;m always open to discussing new opportunities and potential collaborations. Feel free to reach out to me directly at{" "}
+                  <a
+                    href="mailto:mammoliti.sam@gmail.com"
+                    className="hover:underline cursor-pointer dark:text-highlight-dark text-highlight-light focus:outline-none focus:ring-2 focus:ring-title-light dark:focus:ring-title-dark"
+                  >
                     mammoliti.sam@gmail.com
-                  </span>
+                  </a>
                   . I&apos;d love to hear from you!
                 </p>
 

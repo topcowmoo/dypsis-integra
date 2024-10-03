@@ -2,14 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <meta
       name="description"
       content="Full-stack web developer passionate about building high-quality web applications with a creative touch, ensuring an exceptional user experience."
     />
+    <meta
+      name="keywords"
+      content="Salvatore Mammoliti, Full-Stack Web Developer, Web Development Portfolio, MERN stack, Frontend Developer"
+    />
+
+    <meta
+      property="og:title"
+      content="Salvatore Mammoliti | Full-Stack Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Passionate about building high-quality web applications with a creative touch, ensuring exceptional user experience."
+    />
+    <meta
+      property="og:image"
+      content="https://portfoliobucket2024.s3.amazonaws.com/previewhtml.webp"
+    />
+    <meta property="og:url" content="https://salvatoremammoliti.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="/images/favicon.svg" sizes="32x32" />
+    <link rel="icon" href="/images/favicon.svg" sizes="16x16" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      as="style"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
@@ -17,15 +45,18 @@
 
     <!-- Dark mode script to apply theme instantly -->
     <script>
-      if (localStorage.getItem('theme') === 'dark' || 
-         (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.remove("dark");
       }
     </script>
 
-    <title>Salvatore Mammoliti</title>
+    <title>Salvatore Mammoliti | Full-Stack Web Developer</title>
   </head>
   <body>
     <div id="root"></div>

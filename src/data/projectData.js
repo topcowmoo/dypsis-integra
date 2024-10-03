@@ -7,6 +7,7 @@ const projectData = [
     image: "https://portfoliobucket2024.s3.amazonaws.com/baketomo.webp",
     githubLink: "https://github.com/topcowmoo/futuristic-wound",
     renderLink: "https://baketomo.onrender.com",
+    technologies: ["MERN", "GraphQL", "AWS S3", "MongoDB Atlas"],
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const projectData = [
     image: "https://portfoliobucket2024.s3.amazonaws.com/jate.webp",
     githubLink: "https://github.com/topcowmoo/general-toothpaste",
     renderLink: "https://general-toothpaste.onrender.com",
+    technologies: ["PWA", "JavaScript", "IndexedDB"],
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const projectData = [
     image: "https://portfoliobucket2024.s3.amazonaws.com/cream.webp",
     githubLink: "https://github.com/topcowmoo/unbreakable-cream",
     herokuLink: "https://unbreakable-cream-a4b95d823c2c.herokuapp.com/",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js"],
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const projectData = [
     image: "https://portfoliobucket2024.s3.amazonaws.com/drymvc.webp",
     githubLink: "https://github.com/topcowmoo/dry-mvc-tech-blog",
     herokuLink: "https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/",
+    technologies: ["MVC", "Node.js", "MySQL", "Express.js"],
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ const projectData = [
     githubLink: "https://github.com/topcowmoo/windy-e-commerce-site",
     demoLink:
       "https://drive.google.com/file/d/1q_LhyzKBZ6-6fw9hbPgev_rvDWNz-TUh/view",
+    technologies: ["Express.js", "MySQL", "JavaScript"],
   },
   {
     id: 6,
@@ -53,7 +58,7 @@ const projectData = [
     image: "https://portfoliobucket2024.s3.amazonaws.com/weather.webp",
     githubLink: "https://github.com/topcowmoo/effective-weather-interface",
     netlifyLink: "https://effective-weather-interface.netlify.app",
-
+    technologies: ["JavaScript", "Weather API", "CSS"],
   },
 ];
 

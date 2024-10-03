@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/dypsis-integra">
-    <img src="public/images/logo.svg" alt="Logo">
+    <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp" alt="Logo">
   </a>
 
 <h3 align="center">Salvatore Mammoliti</h3>
