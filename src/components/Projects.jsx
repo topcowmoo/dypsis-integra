@@ -4,10 +4,7 @@ import projectData from "../data/projectData";
 // Define Projects functional component
 const Projects = () => {
   return (
-    <section aria-labelledby="projects-section">
-      {/* Provide a heading for accessibility */}
-      <h2 id="projects-section" className="sr-only">Projects</h2> 
-      
+    <section>
       <div className="flex flex-col gap-8">
         {/* Map over the projects array and render project cards */}
         {projectData.map((project) => (
