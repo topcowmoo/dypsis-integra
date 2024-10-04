@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
 
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/9780abc1-5367-4808-a38b-5a5d8a783e8d/deploy-status)](https://app.netlify.com/sites/salvatoremammoliti/deploys)
+
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/dypsis-integra">
@@ -9,7 +11,7 @@
 <h3 align="center">Salvatore Mammoliti</h3>
 
   <p align="center">
-This project is a single page app React Portfolio, designed to showcase my work and skills. Built using Vite for fast development, Tailwind CSS for styling, and Formik for form management, the portfolio includes sections for displaying my projects, contacting me among others. It provides a clean and modern interface for potential employers or clients to explore my portfolio. Please check out the deployed version, which is hosted on Netlify (link below). Thank you.
+<!-- This project is a single page app React Portfolio, designed to showcase my work and skills. Built using Vite for fast development, Tailwind CSS for styling, and Formik for form management, the portfolio includes sections for displaying my projects, contacting me among others. It provides a clean and modern interface for potential employers or clients to explore my portfolio. Please check out the deployed version, which is hosted on Netlify (link below). Thank you. -->
 
 <br />
 <br />
@@ -52,47 +54,60 @@ This project is a single page app React Portfolio, designed to showcase my work 
 
 ## About The Project
 
-A single-page React portfolio deployed on Netlify showcasing projects, skills, and experiences.
+<!-- A single-page React portfolio deployed on Netlify showcasing projects, skills, and experiences. -->
 
-Landing Page:
+Dark Mode Landing Page:
 
-![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/f7dbbc13-5691-47ce-a653-23e0e5d98d54)
+![image](https://portfoliobucket2024.s3.amazonaws.com/landingdark.webp)
 
-About Me Page:
+Light Mode Landing Page:
 
-![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/fd01db57-91dd-49f1-a610-0f7dbb522282)
+![image](https://portfoliobucket2024.s3.amazonaws.com/landinglight.webp)
 
-Projects Page:
+About Me Page In Dark Mode:
 
-![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/729e93e9-c487-41e6-8acd-ff69c41d4335)
+![image](https://portfoliobucket2024.s3.amazonaws.com/about.webp)
 
-Contact Page:
+Projects Page In Light Mode:
 
-![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/e84abbc9-7e07-4280-ad36-0807d1cc8db5)
+![image](https://portfoliobucket2024.s3.amazonaws.com/projects.webp)
 
-Resume Page:
+Contact Page In Light Mode:
 
-![image](https://github.com/topcowmoo/dypsis-integra/assets/149528212/1497ebde-6637-484d-a3c3-902492879118)
+![image](https://portfoliobucket2024.s3.amazonaws.com/contact.webp)
+
+Mobile View In Dark Mode:
+
+![image](https://portfoliobucket2024.s3.amazonaws.com/mobile.webp)
+
+Hamburger Menu In Dark Mode:
+
+![image](https://portfoliobucket2024.s3.amazonaws.com/hamburger.webp)
 
 <!-- BUILT WITH -->
 
 ## Built With
 
-[![My Skills](https://simpleskill.icons.workers.dev/svg?i=nodedotjs,react,vite,reactrouter,tailwindcss,HTML5,javascript,googlefonts,amazons3,netlify,=50)](#)
+![My Skills](https://portfoliobucket2024.s3.amazonaws.com/readicons.svg)
 
 <!-- INSTALLATION -->
 
 ### Installation
 
 1. Clone the repo to your local machince.
+
    ```sh
    git clone https://github.com/topcowmoo/dypsis-integra
    ```
+
 2. Install NPM packages
+
    ```sh
    npm install
    ```
+
 3. Start the server from the terminal
+
    ```sh
    npm run start
    ```
@@ -120,7 +135,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
+Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - <mammoliti.sam@gmail.com>
 
 Project Link: [https://github.com/topcowmoo/dypsis-integra](https://github.com/topcowmoo/dypsis-integra)
 
@@ -133,6 +148,7 @@ Netlify Link: [https://salvatoremammoliti.netlify.app/](https://salvatoremammoli
 ## Acknowledgments
 
 - [Vite](https://vitejs.dev/)
+- [Amazon S3](https://portfoliobucket2024.s3.amazonaws.com/hamburger.webp)
 - [React](https://react.dev/)
 - [Netlify](https://www.netlify.com/)
 - [Tailwindcss](https://tailwindcss.com/)
@@ -140,6 +156,7 @@ Netlify Link: [https://salvatoremammoliti.netlify.app/](https://salvatoremammoli
 - [ChatGPT](https://chat.openai.com/)
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Simple Icons](https://simpleicons.org/)
+- [Figma](https://www.figma.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,7 +167,3 @@ Netlify Link: [https://salvatoremammoliti.netlify.app/](https://salvatoremammoli
 ![Languages](https://img.shields.io/github/languages/count/topcowmoo/dypsis-integra)
 
 [![wakatime](https://wakatime.com/badge/user/018eee6c-d24d-478e-b142-37a7c9e0fdac/project/a7cd91ab-b4c5-4281-8c4c-4600ba85cf07.svg)](https://wakatime.com/badge/user/018eee6c-d24d-478e-b142-37a7c9e0fdac/project/a7cd91ab-b4c5-4281-8c4c-4600ba85cf07)
-
- [![Netlify Status](https://api.netlify.com/api/v1/badges/9780abc1-5367-4808-a38b-5a5d8a783e8d/deploy-status)](https://app.netlify.com/sites/salvatoremammoliti/deploys)
-
-[![Analytics](https://simpleanalyticsbadges.com/dypsis-integra.netlify.app?mode=auto)](https://dashboard.simpleanalytics.com/verschaffeltia-splendida.netlify.app?utm_source=verschaffeltia-splendida.netlify.app&utm_content=badge)
