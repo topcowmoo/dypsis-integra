@@ -17,7 +17,11 @@ function Header({ toggleDarkMode, isDarkMode }) {
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
         {/* Logo on the left */}
         <div className="flex-shrink-0 hidden md:block ">
-          <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp" alt="Personal logo" className="w-[40px] h-[42px]" />
+          <img
+            src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp"
+            alt="Personal logo"
+            className="w-[40px] h-[42px]"
+          />
         </div>
 
         {/* Centered navigation for md and above */}
@@ -45,11 +49,12 @@ function Header({ toggleDarkMode, isDarkMode }) {
               Contact
             </HashLink>
             <a
-              href="https://portfoliobucket2024.s3.amazonaws.com/mammolitiResume.pdf"
+              href="https://drive.google.com/file/d/1qzBWnTBhfwDffmrWvgihIuMGnNGvUOej/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
               aria-label="Resume (PDF Document)"
+              onClick={() => setIsActive(false)}
             >
               Resume
             </a>
@@ -117,9 +122,10 @@ function Header({ toggleDarkMode, isDarkMode }) {
           </li>
           <li className="text-[20px] block px-4 py-2 mb-32 dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light">
             <a
-              href="https://portfoliobucket2024.s3.amazonaws.com/mammolitiResume.pdf"
+              href="https://drive.google.com/file/d/1qzBWnTBhfwDffmrWvgihIuMGnNGvUOej/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
               aria-label="Resume (PDF Document)"
               onClick={() => setIsActive(false)}
             >
