@@ -45,3 +45,19 @@
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "no-cache"
+
+    [[headers]]
+  # Cache control for PDF files (if you want short cache or no cache)
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+    [[redirects]]
+  from = "/mammolitiResume.pdf"
+  to = "/mammolitiResume.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

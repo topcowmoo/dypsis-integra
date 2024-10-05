@@ -45,7 +45,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
               Contact
             </HashLink>
             <a
-              href="/mammolitiResume.pdf"
+              href="https://portfoliobucket2024.s3.amazonaws.com/mammolitiResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
@@ -117,7 +117,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           </li>
           <li className="text-[20px] block px-4 py-2 mb-32 dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light">
             <a
-              href="/mammolitiResume.pdf"
+              href="https://portfoliobucket2024.s3.amazonaws.com/mammolitiResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Resume (PDF Document)"
