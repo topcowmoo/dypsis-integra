@@ -1,0 +1,47 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Manifest file cache control
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
+[[headers]]
+  # Cache assets like images, fonts, etc. for 1 year
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = '''
+    max-age=31536000,
+    immutable
+    '''
+
+[[headers]]
+  # Cache JavaScript files for 1 year
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  # Cache CSS files for 1 year
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  # Cache HTML files for 5 minutes
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  # Prevent caching of robots.txt
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "no-cache"
