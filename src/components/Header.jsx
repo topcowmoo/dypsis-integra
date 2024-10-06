@@ -20,7 +20,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           <img
             src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp"
             alt="Personal logo"
-            className="w-[40px] h-[42px]"
+            className="w-[40px] h-[42px] object-contain"
           />
         </div>
 
