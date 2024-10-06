@@ -66,7 +66,7 @@ const projectData = [
   //   title: "The Wellness Hub",
   //   description:
   //     "TBD",
-  //   image: "TBD",
+  //   image: "https://portfoliobucket2024.s3.amazonaws.com/drm.webp",
   //   githubLink: "https://github.com/topcowmoo/areca-vestiaria",
   //   godaddyLink: "TBD",
   //   },

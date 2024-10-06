@@ -50,7 +50,7 @@ const ProjectCard = ({ project }) => {
           src={image ?? "https://via.placeholder.com/300"}
           alt={`${title} project preview`}
           loading="lazy" // Improves performance by lazy-loading the image
-          className="rounded-md w-full lg:w-auto xl:w-full 2xl:w-full h-auto"
+          className="rounded-md w-full lg:w-auto xl:w-full 2xl:w-full h-auto object-fit:cover"
         />
       </div>
 
