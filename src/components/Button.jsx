@@ -4,7 +4,7 @@ function Button({ text, onClick = () => {}, className = "", ariaLabel, type = "b
   return (
     <button
       onClick={onClick}
-      className={`relative overflow-hidden rounded-md bg-black bg-opacity-10 dark:bg-white/10 dark:text-title-dark text-title-light transition-all duration-300 ease-in-out border-2 border-transparent dark:hover:border-title-dark hover:border-title-light focus:outline-none focus:ring-4 focus:ring-title-light dark:focus:ring-title-dark ${className}`}
+      className={`relative overflow-hidden rounded-md bg-black bg-opacity-10 dark:bg-white/10 dark:text-title-dark text-title-light transition-all duration-300 ease-in-out border-2 border-transparent dark:hover:border-title-dark hover:border-title-light focus:outline-none focus:ring-4 focus:ring-focusRing-light dark:focus:ring-focusRing-dark ${className}`}
       aria-label={ariaLabel}
       type={type} // Explicitly set the button type
     >

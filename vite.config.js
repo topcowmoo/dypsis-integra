@@ -8,12 +8,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      workbox: {
-        cleanupOutdatedCaches: true,
-      },
-      devOptions: {
-        enabled: true,
-      },
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "robots.txt"],
       manifest: {
         id: "/",

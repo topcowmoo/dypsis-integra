@@ -26,6 +26,10 @@ export default {
           light: "#CC3600", // Light mode highlight
           dark: "#fbb67f", // Dark mode highlight
         },
+          focusRing: {
+            light: "#004262", // Light mode focus ring
+            dark: "#FFFFFF", // Dark mode focus ring
+        },
       },
     },
   },

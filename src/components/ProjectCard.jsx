@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
       onClick={() => openLinkInNewTab(url)}
       aria-label={label}
       title={label} // Add title attribute for accessibility and tooltips
-      className="mr-1 text-[24px] lg:text-[26px] xl:text-[30px] 2xl:text-[36px] focus:outline-none focus:ring-2 focus:ring-title-light dark:focus:ring-title-dark"
+      className="mr-1 text-[24px] lg:text-[26px] xl:text-[30px] 2xl:text-[36px] focus:outline-none focus:ring-2 focus:ring-focusRing-light dark:focus:ring-focusRing-dark"
     >
       <IconComponent />
     </button>

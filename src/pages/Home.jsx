@@ -134,11 +134,14 @@ const Home = () => {
                 </h2>
                 <p className="dark:text-alltext-dark text-alltext-light w-full text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px] leading-normal">
                   I&apos;m always open to discussing new opportunities and
-                  potential collaborations. Feel free to reach out to me
+                  potential{" "}
+                  <span className="dark:text-highlight-dark text-highlight-light">
+                  collaborations
+                  </span>.{" "} Feel free to reach out to me
                   directly at{" "}
                   <a
                     href="mailto:mammoliti.sam@gmail.com"
-                    className="hover:underline cursor-pointer dark:text-highlight-dark text-highlight-light focus:outline-none focus:ring-2 focus:ring-title-light dark:focus:ring-title-dark"
+                    className="hover:underline cursor-pointer dark:text-alltext-dark text-alltext-light focus:outline-none focus:ring-2 focus:ring-focusRing-light dark:focus:ring-focusRing-dark"
                     onClick={handleEmailClick} // Track email link click
                   >
                     mammoliti.sam@gmail.com

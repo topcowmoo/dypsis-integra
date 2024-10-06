@@ -21,7 +21,7 @@ function Socials() {
           href="https://github.com/topcowmoo"
           target="_blank"
           rel="noopener noreferrer"
-          className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-title-light dark:focus:ring-title-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-full"
+          className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-focusRing-light dark:focus:ring-focusRing-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-full"
           title="Visit my Github Profile"
           aria-label="Visit my Github Profile"
         >
@@ -32,7 +32,7 @@ function Socials() {
           href="https://www.linkedin.com/in/salvatore-mammoliti-694b6b28b/"
           target="_blank"
           rel="noopener noreferrer"
-           className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-title-light dark:focus:ring-title-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-none"
+           className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-focusRing-light dark:focus:ring-focusRing-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-none"
           title="Visit my LinkedIn Profile"
           aria-label="Visit my LinkedIn Profile"
         >
@@ -43,7 +43,7 @@ function Socials() {
           href="https://wakatime.com/@topcowmoo"
           target="_blank"
           rel="noopener noreferrer"
-           className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-title-light dark:focus:ring-title-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-full"
+           className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-focusRing-light dark:focus:ring-focusRing-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-full"
           title="Visit my WakaTime Profile"
           aria-label="Visit my WakaTime Profile"
         >
@@ -54,7 +54,7 @@ function Socials() {
           href="https://www.frontendmentor.io/profile/topcowmoo"
           target="_blank"
           rel="noopener noreferrer"
-           className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-title-light dark:focus:ring-title-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-full"
+           className="dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-4 focus:ring-focusRing-light dark:focus:ring-focusRing-dark focus:text-highlight-light dark:focus:text-highlight-dark rounded-full"
           title="Visit my Frontend Mentor Profile"
           aria-label="Visit my Frontend Mentor Profile"
         >

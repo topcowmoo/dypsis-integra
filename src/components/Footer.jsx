@@ -10,7 +10,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="Visit Salvatore Mammoliti's GitHub"
           title="Visit Salvatore Mammoliti's GitHub" // Adds a tooltip for better UX
-          className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-2 focus:ring-title-light dark:focus:ring-title-dark"
+          className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light focus:outline-none focus:ring-2 focus:ring-focusRing-light dark:focus:ring-focusRing-dark"
         >
           Salvatore Mammoliti
         </a>

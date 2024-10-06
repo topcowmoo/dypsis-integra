@@ -1,13 +1,13 @@
 const projectData = [
   {
     id: 1,
-    title: "Baketomo",
+    title: "Dry MVC Tech Blog",
     description:
-      "A multi-page MERN app featuring GraphQL, AWS S3, and MongoDB Atlas, deployed on Render.",
-    image: "https://portfoliobucket2024.s3.amazonaws.com/baketomo.webp",
-    githubLink: "https://github.com/topcowmoo/futuristic-wound",
-    renderLink: "https://baketomo.onrender.com",
-    technologies: ["MERN", "GraphQL", "AWS S3", "MongoDB Atlas"],
+      "A CMS-style blog platform with user-generated content, built on the MVC architecture.",
+    image: "https://portfoliobucket2024.s3.amazonaws.com/drymvc.webp",
+    githubLink: "https://github.com/topcowmoo/dry-mvc-tech-blog",
+    herokuLink: "https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/",
+    technologies: ["MVC", "Node.js", "MySQL", "Express.js"],
   },
   {
     id: 2,
@@ -29,15 +29,16 @@ const projectData = [
     herokuLink: "https://unbreakable-cream-a4b95d823c2c.herokuapp.com/",
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
   },
+  
   {
     id: 4,
-    title: "Dry MVC Tech Blog",
+    title: "Baketomo",
     description:
-      "A CMS-style blog platform with user-generated content, built on the MVC architecture.",
-    image: "https://portfoliobucket2024.s3.amazonaws.com/drymvc.webp",
-    githubLink: "https://github.com/topcowmoo/dry-mvc-tech-blog",
-    herokuLink: "https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/",
-    technologies: ["MVC", "Node.js", "MySQL", "Express.js"],
+      "A multi-page MERN app featuring GraphQL, AWS S3, and MongoDB Atlas, deployed on Render.",
+    image: "https://portfoliobucket2024.s3.amazonaws.com/baketomo.webp",
+    githubLink: "https://github.com/topcowmoo/futuristic-wound",
+    renderLink: "https://baketomo.onrender.com",
+    technologies: ["MERN", "GraphQL", "AWS S3", "MongoDB Atlas"],
   },
   {
     id: 5,
