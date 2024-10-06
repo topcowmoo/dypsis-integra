@@ -13,7 +13,30 @@ function App() {
   useEffect(() => {
     ReactGA.initialize(TRACKING_ID);
     ReactGA.send({ hitType: 'pageview', page: location.pathname });
-  }, [location]); // Track pageviews when route changes
+  }, [location]);
+
+  // Global click event listener for tracking clicks on buttons and links
+  useEffect(() => {
+    const handleGlobalClick = (event) => {
+      const target = event.target;
+      // Check if the target is a clickable element
+      if (target.tagName === 'A' || target.tagName === 'BUTTON') {
+        ReactGA.event({
+          category: 'Interaction',
+          action: `Clicked ${target.tagName}`,
+          label: target.innerText || target.href, // Use button text or link href
+        });
+      }
+    };
+
+    // Add event listener to the document
+    document.addEventListener('click', handleGlobalClick);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener('click', handleGlobalClick);
+    };
+  }, []);
 
   // Initialize state by checking localStorage for saved theme or default to dark mode
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -28,7 +51,7 @@ function App() {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [isDarkMode]); // Re-apply mode whenever isDarkMode changes
+  }, [isDarkMode]);
 
   // Function to toggle dark mode and save preference in localStorage
   const toggleDarkMode = () => {
@@ -47,12 +70,11 @@ function App() {
 
   return (
     <div className="bg-bgc-light dark:bg-bgc-dark min-h-screen transition-colors duration-300">
-      {/* Pass toggleDarkMode and isDarkMode state to Header */}
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <main>
         <Outlet /> {/* Render child routes based on current route */}
       </main>
-      <Footer /> {/* Render the Footer component */}
+      <Footer />
     </div>
   );
 }
