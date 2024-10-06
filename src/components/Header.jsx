@@ -3,9 +3,18 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { PiSunDuotone, PiMoonDuotone } from "react-icons/pi";
+import ReactGA from "react-ga4"; // Use react-ga4 for Google Analytics 4
 
 function Header({ toggleDarkMode, isDarkMode }) {
   const [isActive, setIsActive] = useState(false); // Mobile menu state
+
+  const handleResumeClick = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Clicked Resume Button",
+      label: "Resume Downloaded",
+    });
+  };
 
   // Toggle the mobile menu
   const toggleActiveClass = () => {
@@ -54,7 +63,10 @@ function Header({ toggleDarkMode, isDarkMode }) {
               rel="noopener noreferrer"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
               aria-label="Resume (PDF Document)"
-              onClick={() => setIsActive(false)}
+              onClick={() => {
+                setIsActive(false);
+                handleResumeClick();
+              }}
             >
               Resume
             </a>
@@ -127,7 +139,10 @@ function Header({ toggleDarkMode, isDarkMode }) {
               rel="noopener noreferrer"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
               aria-label="Resume (PDF Document)"
-              onClick={() => setIsActive(false)}
+              onClick={() => {
+                setIsActive(false);
+                handleResumeClick();
+              }}
             >
               Resume
             </a>

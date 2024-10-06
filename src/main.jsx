@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'; 
 import App from './App.jsx'; 
 import Home from './pages/Home.jsx'; 
-import Error from './pages/Error.jsx'; 
+import Error from './pages/Error.jsx';
 
 // Create a router with routes for different pages in the application
 const router = createBrowserRouter([
