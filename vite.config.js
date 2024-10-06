@@ -10,12 +10,13 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "robots.txt"],
       manifest: {
+        id: "/",
         name: "Salvatore Mammoliti Portfolio",
         short_name: "SM Portfolio",
         description:
           "Salvatore Mammoliti's Web Development Portfolio showcasing projects and skills",
         theme_color: "#d4d4d4",
-        background_color: "#ff0000",
+        background_color: "#d4d4d4",
         display: "standalone",
         start_url: "/",
         icons: [
