@@ -5,6 +5,7 @@ import {
   SiRender,
   SiScreencastify,
   SiNetlify,
+  SiGodaddy,
 } from "react-icons/si";
 
 const ProjectCard = ({ project }) => {
@@ -17,6 +18,7 @@ const ProjectCard = ({ project }) => {
     herokuLink,
     renderLink,
     netlifyLink,
+    godaddyLink,
   } = project;
 
   // Function to open links in a new tab with proper security attributes
@@ -86,6 +88,11 @@ const ProjectCard = ({ project }) => {
               {renderLinkButton(netlifyLink, SiNetlify, "Netlify live link")}
             </div>
           )}
+          {godaddyLink && (
+            <div className="dark:text-alltext-dark text-alltext-light hover:text-highlight-light dark:hover:text-highlight-dark">
+              {renderLinkButton(godaddyLink, SiGodaddy, " GoDaddy live link")}
+            </div>
+          )}
         </div>
       </div>
     </article>
@@ -103,6 +110,7 @@ ProjectCard.propTypes = {
     herokuLink: PropTypes.string,
     renderLink: PropTypes.string,
     netlifyLink: PropTypes.string,
+    godaddyLink: PropTypes.string,
   }).isRequired,
 };
 

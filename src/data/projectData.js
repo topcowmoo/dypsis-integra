@@ -61,6 +61,15 @@ const projectData = [
     netlifyLink: "https://effective-weather-interface.netlify.app",
     technologies: ["JavaScript", "Weather API", "CSS"],
   },
+  // {
+  //   id: 7,
+  //   title: "The Wellness Hub",
+  //   description:
+  //     "TBD",
+  //   image: "TBD",
+  //   githubLink: "https://github.com/topcowmoo/areca-vestiaria",
+  //   godaddyLink: "TBD",
+  //   },
 ];
 
 export default projectData;
