@@ -1,17 +1,18 @@
 <a name="readme-top"></a>
 
- [![Netlify Status](https://api.netlify.com/api/v1/badges/9780abc1-5367-4808-a38b-5a5d8a783e8d/deploy-status)](https://app.netlify.com/sites/salvatoremammoliti/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9780abc1-5367-4808-a38b-5a5d8a783e8d/deploy-status)](https://app.netlify.com/sites/salvatoremammoliti/deploys)
 
 <br />
 <div align="center">
-  <a href="https://github.com/topcowmoo/dypsis-integra">
-    <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp" alt="Logo">
+  <a href="https://github.com/topcowmoo/dypsis-integra"> 
+    <img src="https://portfoliobucket2024.s3.amazonaws.com/logo.webp"
+   alt="Logo"
+   style="height: 150px">
   </a>
 
 <h3 align="center">Salvatore Mammoliti</h3>
 
-  <p align="center">
-<!-- This project is a single page app React Portfolio, designed to showcase my work and skills. Built using Vite for fast development, Tailwind CSS for styling, and Formik for form management, the portfolio includes sections for displaying my projects, contacting me among others. It provides a clean and modern interface for potential employers or clients to explore my portfolio. Please check out the deployed version, which is hosted on Netlify (link below). Thank you. -->
+<p align="center"> This project is a single-page React portfolio designed to showcase my skills and projects as a full-stack web developer. Built using Vite for fast development and Tailwind CSS for responsive and modern styling, this Progressive Web App (PWA) includes sections like About, Projects, and Contact. It provides a clean, professional interface for potential employers or clients to explore my work and easily connect with me. The portfolio is hosted on Netlify (link below). Thank you for visiting! </p>
 
 <br />
 <br />
@@ -54,7 +55,7 @@
 
 ## About The Project
 
-<!-- A single-page React portfolio deployed on Netlify showcasing projects, skills, and experiences. -->
+A clean and modern design with both dark and light mode options allows users to toggle between themes for an optimal viewing experience. The site is fully responsive, providing smooth functionality across all devices, from desktops to mobile. Each section—About, Projects, and Contact—is designed for easy navigation and a seamless user experience. The portfolio is hosted on Netlify and showcases my work and skills as a full-stack web developer.
 
 Dark Mode Landing Page:
 
@@ -148,7 +149,7 @@ Netlify Link: [https://salvatoremammoliti.netlify.app/](https://salvatoremammoli
 ## Acknowledgments
 
 - [Vite](https://vitejs.dev/)
-- [Amazon S3](https://portfoliobucket2024.s3.amazonaws.com/hamburger.webp)
+- [Amazon S3](https://aws.amazon.com/s3/)
 - [React](https://react.dev/)
 - [Netlify](https://www.netlify.com/)
 - [Tailwindcss](https://tailwindcss.com/)
