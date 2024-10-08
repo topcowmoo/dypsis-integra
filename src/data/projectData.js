@@ -61,6 +61,17 @@ const projectData = [
     netlifyLink: "https://effective-weather-interface.netlify.app",
     technologies: ["JavaScript", "Weather API", "CSS"],
   },
+  {
+    id: 7,
+    title: "Google Books Search",
+    description:
+      "MERN stack Google Books search app refactored from RESTful API to GraphQL.",
+    image: "https://portfoliobucket2024.s3.amazonaws.com/googlebook.webp",
+    githubLink: "https://github.com/topcowmoo/areca-guppyana",
+    renderLink: "https://areca-guppyana.onrender.com/",
+    technologies: ["MongoDB", "Express.js", "React", "Node", "GraphQL"],
+  },
+
   // {
   //   id: 7,
   //   title: "The Wellness Hub",
@@ -71,17 +82,6 @@ const projectData = [
   //   godaddyLink: "TBD",
   // technologies: ["TBD"],
   //   },
-
-  // {
-  //   id: 8,
-  //   title: "Google Books Search",
-  //   description:
-  //     "TBD",
-  //   image: "https://portfoliobucket2024.s3.amazonaws.com/googlebook.webp",
-  //   githubLink: "https://github.com/topcowmoo/areca-guppyana",
-  //   renderLink: "https://areca-guppyana.onrender.com/",
-  //   technologies: ["tbd"],
-  // },
 ];
 
 export default projectData;
