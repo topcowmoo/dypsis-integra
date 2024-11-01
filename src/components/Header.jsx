@@ -46,10 +46,10 @@ function Header({ toggleDarkMode, isDarkMode }) {
               to="#contact"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
             >
-              Contact
+              Contact 
             </HashLink>
             <a
-              href="https://drive.google.com/file/d/1qzBWnTBhfwDffmrWvgihIuMGnNGvUOej/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rS-DXO7BGqwJU8QnnPwJzDvXy2sF5HA8/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline dark:text-alltext-dark dark:hover:text-highlight-dark text-alltext-light hover:text-highlight-light"
