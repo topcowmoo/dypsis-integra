@@ -60,7 +60,7 @@ const ProjectCard = ({ project }) => {
         <h3 className="text-[22px] md:text-[27px] lg:text-[28px] xl:text-[34px] dark:text-title-dark text-title-light lg:mt-0 mt-4">
           {title}
         </h3>
-        <p className="dark:text-alltext-dark text-alltext-light mt-3 mb-5 leading-normal text-balance text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px]">
+        <p className="dark:text-alltext-dark text-alltext-light mt-3 mb-5 mx-3 leading-normal text-balance text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[25px]">
           {description}
         </p>
         <div className="flex space-x-4 mt-2 justify-center items-center">
