@@ -1,6 +1,15 @@
 const projectData = [
   {
     id: 1,
+    title: "VaultGuard Password Locker",
+    description: "A secure, single-page React app for storing and managing passwords with organized browsing and user-friendly interface features.",
+    image: "https://vaultguardbucket2024.s3.us-east-1.amazonaws.com/Login+page.webp",
+    githubLink: "https://github.com/topcowmoo/dictyocaryum-lamarckianum",
+    renderLink: "https://vpl.onrender.com/",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "React", "React Router", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    id: 2,
     title: "Dry MVC Tech Blog",
     description:
       "A CMS-style blog platform with user-generated content, built on the MVC architecture.",
@@ -8,16 +17,6 @@ const projectData = [
     githubLink: "https://github.com/topcowmoo/dry-mvc-tech-blog",
     herokuLink: "https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/",
     technologies: ["MVC", "Node.js", "MySQL", "Express.js"],
-  },
-  {
-    id: 2,
-    title: "Just Another Text Editor",
-    description:
-      "Offline-supported rich text editing within a Progressive Web Application (PWA).",
-    image: "https://portfoliobucket2024.s3.amazonaws.com/jate.webp",
-    githubLink: "https://github.com/topcowmoo/general-toothpaste",
-    renderLink: "https://general-toothpaste.onrender.com",
-    technologies: ["PWA", "JavaScript", "IndexedDB"],
   },
   {
     id: 3,
@@ -51,18 +50,9 @@ const projectData = [
       "https://drive.google.com/file/d/1q_LhyzKBZ6-6fw9hbPgev_rvDWNz-TUh/view",
     technologies: ["Express.js", "MySQL", "JavaScript"],
   },
+  
   {
     id: 6,
-    title: "Weather Dashboard",
-    description:
-      "A responsive weather dashboard delivering real-time updates and forecasts.",
-    image: "https://portfoliobucket2024.s3.amazonaws.com/weather.webp",
-    githubLink: "https://github.com/topcowmoo/effective-weather-interface",
-    netlifyLink: "https://effective-weather-interface.netlify.app",
-    technologies: ["JavaScript", "Weather API", "CSS"],
-  },
-  {
-    id: 7,
     title: "Google Books Search",
     description:
       "MERN stack Google Books search app refactored from RESTful API to GraphQL.",
@@ -70,6 +60,16 @@ const projectData = [
     githubLink: "https://github.com/topcowmoo/areca-guppyana",
     renderLink: "https://areca-guppyana.onrender.com/",
     technologies: ["MongoDB", "Express.js", "React", "Node", "GraphQL"],
+  },
+  {
+    id: 7,
+    title: "Just Another Text Editor",
+    description:
+      "Offline-supported rich text editing within a Progressive Web Application (PWA).",
+    image: "https://portfoliobucket2024.s3.amazonaws.com/jate.webp",
+    githubLink: "https://github.com/topcowmoo/general-toothpaste",
+    renderLink: "https://general-toothpaste.onrender.com",
+    technologies: ["PWA", "JavaScript", "IndexedDB"],
   },
 
   // {

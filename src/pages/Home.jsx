@@ -27,9 +27,10 @@ const Home = () => {
     <>
       {/* Home Section */}
       <div
-        className="relative flex flex-col justify-center items-center min-h-screen"
-        id="home"
-      >
+  className="relative flex flex-col justify-center items-center min-h-screen text-center text-balance"
+  id="home"
+>
+
         <header className="w-full flex flex-col items-center dark:text-title-dark text-title-light text-center">
           <h1
             className="text-[34px] sm:text-[65px] lg:text-[72px] xl:text-[80px]"

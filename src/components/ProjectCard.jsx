@@ -40,19 +40,20 @@ const ProjectCard = ({ project }) => {
 
   return (
     <article
-      className="group container flex flex-col lg:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-md p-7 brightness-75 transition-transform duration-300 hover:brightness-100 hover:-translate-y-3"
+      className="group container flex flex-col md:flex-row dark:bg-white/10 bg-black bg-opacity-10 rounded-md p-7 brightness-75 transition-transform duration-300 hover:brightness-100 hover:-translate-y-3"
       onTouchStart={(e) => e.currentTarget.classList.add("brightness-100")}
       onTouchEnd={(e) => e.currentTarget.classList.remove("brightness-100")}
     >
       {/* Left section with image */}
-      <div className="project-card w-full lg:max-w-[300px] xl:max-w-full 2xl:max-w-full lg:w-auto">
-        <img
-          src={image ?? "https://via.placeholder.com/300"}
-          alt={`${title} project preview`}
-          loading="lazy" // Improves performance by lazy-loading the image
-          className="rounded-md w-full lg:w-auto xl:w-full 2xl:w-full h-auto object-fit:cover"
-        />
-      </div>
+      <div className="w-full max-w-[300px] h-[200px] overflow-hidden rounded-md">
+  <img
+    src={image ?? "https://via.placeholder.com/300x200?text=Project+Preview"}
+    alt={`${title} project preview`}
+    loading="lazy"
+    className="w-full h-full object-cover"
+  />
+</div>
+
 
       {/* Right section with title, description, and buttons */}
       <div className="flex-1 flex flex-col justify-between lg:justify-start">
