@@ -13,7 +13,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full p-3 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md md:text-[18px] xl:text-[20px] 2xl:text-[25px]">
+    <header className="top-0 z-50 w-full p-3 bg-white/70 dark:bg-[#2C3E50]/70 shadow-sm backdrop-blur-md md:text-[18px] xl:text-[20px] 2xl:text-[25px]">
       <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
         {/* Logo on the left */}
         <div className="flex-shrink-0 hidden md:block ">
