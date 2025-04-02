@@ -86,7 +86,7 @@ function App() {
         <button
           onClick={scrollToTop}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 z-50 bg-black dark:bg-white text-white dark:text-black p-3 rounded-full shadow-lg transition hover:scale-110"
+          className="hidden md:flex fixed bottom-6 right-6 z-50 bg-black dark:bg-white text-white dark:text-black p-3 rounded-full shadow-lg transition hover:scale-110"
         >
           <LuArrowUpToLine className="w-6 h-6" />
         </button>
